@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Python基础5——Excel文件的读写操作 | 谁的博客</title>
+  <title>Python基础1——数据类型 | 谁的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Excel文件的读写操作11.想要从excel中进行读写操作，第一步需要引入两个模块，xlwt和xlrd，一个用于往文件进行写入，一个用来读取；安装成功后，安装到了E:\soft\python\Lib\site-package（安装包）文件夹下 安装xlrd123456安装xlrd安装xlrd在命令行中输入 pip install xlrd（安装前保证目录结构的完整，必须要有Scripts）回车安">
+  <meta name="description" content="构造方法init构造方法init(self,….)在生成对象时调用，可以用来进行一些初始化操作，不需要显示去调用，系统会默认去执行。构造方法支持重载，如果用户自己没有重新定义构造方法，系统就自动执行默认的构造方法。 构造方法init析构方法del(self)在释放对象时调用，支持重载，可以在里面进行一些释放资源的操作，不需要显示调用。 类属性:私有属性，公有属性12345678class peop">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python基础5——Excel文件的读写操作">
-<meta property="og:url" content="http://yoursite.com/2018/08/07/excel/index.html">
+<meta property="og:title" content="Python基础1——数据类型">
+<meta property="og:url" content="http://yoursite.com/2018/08/09/object/index.html">
 <meta property="og:site_name" content="谁的博客">
-<meta property="og:description" content="Excel文件的读写操作11.想要从excel中进行读写操作，第一步需要引入两个模块，xlwt和xlrd，一个用于往文件进行写入，一个用来读取；安装成功后，安装到了E:\soft\python\Lib\site-package（安装包）文件夹下 安装xlrd123456安装xlrd安装xlrd在命令行中输入 pip install xlrd（安装前保证目录结构的完整，必须要有Scripts）回车安">
+<meta property="og:description" content="构造方法init构造方法init(self,….)在生成对象时调用，可以用来进行一些初始化操作，不需要显示去调用，系统会默认去执行。构造方法支持重载，如果用户自己没有重新定义构造方法，系统就自动执行默认的构造方法。 构造方法init析构方法del(self)在释放对象时调用，支持重载，可以在里面进行一些释放资源的操作，不需要显示调用。 类属性:私有属性，公有属性12345678class peop">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-07T03:15:05.111Z">
+<meta property="og:updated_time" content="2018-08-09T09:35:13.735Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python基础5——Excel文件的读写操作">
-<meta name="twitter:description" content="Excel文件的读写操作11.想要从excel中进行读写操作，第一步需要引入两个模块，xlwt和xlrd，一个用于往文件进行写入，一个用来读取；安装成功后，安装到了E:\soft\python\Lib\site-package（安装包）文件夹下 安装xlrd123456安装xlrd安装xlrd在命令行中输入 pip install xlrd（安装前保证目录结构的完整，必须要有Scripts）回车安">
+<meta name="twitter:title" content="Python基础1——数据类型">
+<meta name="twitter:description" content="构造方法init构造方法init(self,….)在生成对象时调用，可以用来进行一些初始化操作，不需要显示去调用，系统会默认去执行。构造方法支持重载，如果用户自己没有重新定义构造方法，系统就自动执行默认的构造方法。 构造方法init析构方法del(self)在释放对象时调用，支持重载，可以在里面进行一些释放资源的操作，不需要显示调用。 类属性:私有属性，公有属性12345678class peop">
   
     <link rel="alternative" href="/atom.xml" title="谁的博客" type="application/atom+xml">
   
@@ -164,32 +164,111 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-excel" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-object" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Python基础5——Excel文件的读写操作
+      Python基础1——数据类型
     </h1>
   
 
         
-        <a href="/2018/08/07/excel/" class="archive-article-date">
-  	<time datetime="2018-08-07T03:17:41.732Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-07</time>
+        <a href="/2018/08/09/object/" class="archive-article-date">
+  	<time datetime="2018-08-09T09:35:38.932Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Excel文件的读写操作"><a href="#Excel文件的读写操作" class="headerlink" title="Excel文件的读写操作"></a>Excel文件的读写操作</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1.想要从excel中进行读写操作，第一步需要引入两个模块，xlwt和xlrd，一个用于往文件进行写入，一个用来读取；安装成功后，安装到了E:\soft\python\Lib\site-package（安装包）文件夹下</span><br></pre></td></tr></table></figure>
-<h3 id="安装xlrd"><a href="#安装xlrd" class="headerlink" title="安装xlrd"></a>安装xlrd</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">安装xlrd安装xlrd在命令行中输入 pip install xlrd（安装前保证目录结构的完整，必须要有Scripts）</span><br><span class="line">回车安装，安装成功显示successfully 并告诉你安装的版本</span><br><span class="line">安装xlwd，安装成功显示successful</span><br><span class="line">有的同学可能还需要用python -m pip install --upgrade pip升级你的python（一般情况下不升级也能够使用）</span><br><span class="line">验证是否安装成功</span><br><span class="line">在python文件中  输入import xlrd 能找到当前模块就证明已经安装成功了</span><br></pre></td></tr></table></figure>
+        <h3 id="构造方法init"><a href="#构造方法init" class="headerlink" title="构造方法init"></a>构造方法<strong>init</strong></h3><p>构造方法<strong>init</strong>(self,….)在生成对象时调用，可以用来进行一些初始化操作，不需要显示去调用，系统会默认去执行。构造方法支持重载，如果用户自己没有重新定义构造方法，系统就自动执行默认的构造方法。</p>
+<h3 id="构造方法init-1"><a href="#构造方法init-1" class="headerlink" title="构造方法init"></a>构造方法<strong>init</strong></h3><p>析构方法<strong>del</strong>(self)在释放对象时调用，支持重载，可以在里面进行一些释放资源的操作，不需要显示调用。</p>
+<h3 id="类属性-私有属性，公有属性"><a href="#类属性-私有属性，公有属性" class="headerlink" title="类属性:私有属性，公有属性"></a>类属性:私有属性，公有属性</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">class people:</span><br><span class="line">    name = <span class="string">'jack'</span>  <span class="comment">#公有的类属性</span></span><br><span class="line">    __age = 12     <span class="comment">#私有的类属性</span></span><br><span class="line">p = people()</span><br><span class="line"><span class="built_in">print</span> p.name             <span class="comment">#正确</span></span><br><span class="line"><span class="built_in">print</span> people.name        <span class="comment">#正确</span></span><br><span class="line"><span class="built_in">print</span> p.__age            <span class="comment">#错误，不能在类外通过实例对象访问私有的类属性</span></span><br><span class="line"><span class="built_in">print</span> people.__age       <span class="comment">#错误，不能在类外通过类对象访问私有的类属性</span></span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<h3 id="简单案例"><a href="#简单案例" class="headerlink" title="简单案例"></a>简单案例</h3><h4 id="写入excel表格"><a href="#写入excel表格" class="headerlink" title="写入excel表格"></a>写入excel表格</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import xlwt</span><br><span class="line">xls = xlwt.Workbook()</span><br><span class="line">sheet = xls.add_sheet(<span class="string">'信息表'</span>) <span class="comment">#表名</span></span><br><span class="line">sheet.write(0, 0, <span class="string">'张三'</span>) <span class="comment">#信息,前两位表示是坐标</span></span><br><span class="line">sheet.write(0, 1, <span class="string">'18'</span>) <span class="comment">#信息</span></span><br><span class="line">xls.save(<span class="string">'学生信息.xls'</span>) <span class="comment">#文件名，保存</span></span><br></pre></td></tr></table></figure>
-<h4 id="读取excel表中的信息-读取出来的是列表格式"><a href="#读取excel表中的信息-读取出来的是列表格式" class="headerlink" title="读取excel表中的信息-读取出来的是列表格式"></a>读取excel表中的信息-读取出来的是列表格式</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import xlrd</span><br><span class="line">xls = xlrd.open_workbook(<span class="string">'学生信息.xls'</span>)</span><br><span class="line">sheet = xls.sheets()[0]</span><br><span class="line">values = sheet.row_values(0)</span><br><span class="line"><span class="built_in">print</span>(values)</span><br></pre></td></tr></table></figure>
-<h3 id="安装xlrd模块"><a href="#安装xlrd模块" class="headerlink" title="安装xlrd模块"></a>安装xlrd模块</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line">pip install xlrd即可</span><br><span class="line">导入模块</span><br><span class="line">import xlrd</span><br><span class="line"><span class="comment">#打开Excel文件读取数据，创建文件对象赋值给workfile</span></span><br><span class="line">　　workfile = xlrd.open_workbook(<span class="string">'excelFile.xlsx'</span>)</span><br><span class="line"><span class="comment">#获得一个工作表（sheet），创建一个表格对象赋值给变量table，三种方法：</span></span><br><span class="line">　　table = workfile.sheets()[0]          <span class="comment">#通过索引顺序获取</span></span><br><span class="line">　　table = workfile.sheet_by_index(0) <span class="comment">#通过索引顺序获取</span></span><br><span class="line">　　table = workfile.sheet_by_name(u<span class="string">'Sheet1'</span>)<span class="comment">#通过名称获取</span></span><br><span class="line"><span class="comment">#获取整行和整列的值（列表）</span></span><br><span class="line">　　table.row_values(0)　　<span class="comment">#获取第一行的值，以列表形式返回</span></span><br><span class="line">　　table.col_values(0)　　<span class="comment">#获取第一列的值，以列表形式返回</span></span><br><span class="line"><span class="comment">#获取行数和列数</span></span><br><span class="line">　　nrows = table.nrows</span><br><span class="line"> 　　ncols = table.ncols</span><br><span class="line"><span class="comment">#根据行数编列所有行的数据</span></span><br><span class="line">　　<span class="keyword">for</span> i <span class="keyword">in</span> range(nrows):</span><br><span class="line">　　　　<span class="built_in">print</span>(table.row_values(i))</span><br><span class="line"><span class="comment">#获取指定单元格的数据，注意行和列的索引值都是从0开始</span></span><br><span class="line">　　cell_A1 = table.cell(0,0).value　　<span class="comment">#表格中A1位置的数据</span></span><br><span class="line">　　cell_C4 = table.cell(2,3).value　　<span class="comment">#表格中C4位置的数据</span></span><br><span class="line"><span class="comment">#使用行列索引确定指定单元格的数据</span></span><br><span class="line">　　cell_A1 = table.row(0)[0].value　　<span class="comment">#表格中第1行第1个位置</span></span><br><span class="line">　　cell_A2 = table.col(1)[0].value　　<span class="comment">#表格中第2列第一个位置</span></span><br><span class="line"><span class="comment">#简单的写入，table.put_cell()</span></span><br><span class="line">　　<span class="built_in">help</span>一下table.put_cell()，可以了解到put_cell()方法有5个参数：rowx, colx, ctype, value, xf_index</span><br><span class="line">	(1) rowx　<span class="comment"># 要写的行索引</span></span><br><span class="line">	(2) colx　<span class="comment"># 要写的列索引</span></span><br><span class="line">	(3) ctype　<span class="comment"># 要写的值的类型： 0 empty, 1 string, 2 number, 3 date, 4 boolean, 5 error</span></span><br><span class="line">	(4) value　<span class="comment"># 要写入的值的数据</span></span><br><span class="line">	(5) xf_index　<span class="comment"># 扩展的格式化，默认是0</span></span><br><span class="line">例：</span><br><span class="line">    table.put_cell(3, 2, 1, <span class="string">'ryh'</span>, 0)</span><br><span class="line">    <span class="built_in">print</span>(table.cell(3, 2).value)</span><br><span class="line"><span class="comment">#不需要关闭文件对象，workfile文件对象没有close()方法</span></span><br><span class="line"><span class="comment">#读取多条信息的值</span></span><br><span class="line">nrows = table.nrows</span><br><span class="line">ncols = table.ncols</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(ncols):</span><br><span class="line"><span class="built_in">print</span>(table.row_values(i))</span><br><span class="line"><span class="comment">#excel表的增删改查</span></span><br><span class="line"><span class="comment">#xlwt写入操作案例</span></span><br><span class="line">import xlwt         </span><br><span class="line">def set_style(name, height, bold = False):</span><br><span class="line">    style = xlwt.XFStyle() <span class="comment">#初始化样式</span></span><br><span class="line">    font = xlwt.Font() <span class="comment">#为样式创建字体</span></span><br><span class="line">    font.name = name</span><br><span class="line">    font.bold = bold</span><br><span class="line">    font.color_index = 4</span><br><span class="line">    font.height = height</span><br><span class="line">    style.font = font</span><br><span class="line">    <span class="built_in">return</span> style    </span><br><span class="line">def write_excel():</span><br><span class="line">    <span class="comment">#创建工作簿</span></span><br><span class="line">    workbook = xlwt.Workbook(encoding=<span class="string">'utf-8'</span>) </span><br><span class="line">    <span class="comment">#创建sheet</span></span><br><span class="line">    data_sheet = workbook.add_sheet(<span class="string">'demo'</span>) </span><br><span class="line">    row0 = [<span class="string">'产品名称'</span>, <span class="string">'分类'</span>, <span class="string">'品牌'</span>, <span class="string">'价格'</span>]</span><br><span class="line">    row1 = [<span class="string">'Apple iPhone X (A1865) 64GB 深空灰色 移动联通电信4G手机'</span>, <span class="string">'电子产品'</span>, <span class="string">'Apple'</span>, <span class="string">'7399'</span>] </span><br><span class="line">    <span class="comment">#生成第一行和第二行</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(row0)):</span><br><span class="line">        data_sheet.write(0, i, row0[i], set_style(<span class="string">'Times New Roman'</span>, 220, True))</span><br><span class="line">        data_sheet.write(1, i, row1[i], set_style(<span class="string">'Times New Roman'</span>, 220, True))</span><br><span class="line">    <span class="comment">#保存文件</span></span><br><span class="line">    workbook.save(<span class="string">'demo.xls'</span>)      </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>: </span><br><span class="line">    write_excel()</span><br><span class="line">    <span class="built_in">print</span>(u<span class="string">'创建demo.xlsx文件成功'</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="实例属性是不需要在类中显示定义的"><a href="#实例属性是不需要在类中显示定义的" class="headerlink" title="实例属性是不需要在类中显示定义的"></a>实例属性是不需要在类中显示定义的</h4><pre><code class="bash">class people:
+    name = <span class="string">'jack'</span>
+p = people()
+p.age =12
+<span class="built_in">print</span> p.name    <span class="comment">#正确</span>
+<span class="built_in">print</span> p.age     <span class="comment">#正确</span>
+<span class="built_in">print</span> people.name    <span class="comment">#正确</span>
+</code></pre>
+<h4 id="方法包括：普通方法、静态方法和类方法，三种方法在内存中都归属于类，区别在于调用方式不同"><a href="#方法包括：普通方法、静态方法和类方法，三种方法在内存中都归属于类，区别在于调用方式不同" class="headerlink" title="方法包括：普通方法、静态方法和类方法，三种方法在内存中都归属于类，区别在于调用方式不同"></a>方法包括：普通方法、静态方法和类方法，三种方法在内存中都归属于类，区别在于调用方式不同</h4><p>普通方法：由对象调用；至少一个self参数；执行普通方法时，自动将调用该方法的对象赋值给self；<br>类方法：由类调用； 至少一个cls参数；执行类方法时，自动将调用该方法的类复制给cls；<br>静态方法：由类调用；无默认参数；</p>
+<pre><code class="bash">class Foo:
+    def __init__(self, name):
+        self.name = name
+    def ord_func(self):
+        <span class="string">""</span><span class="string">" 定义普通方法，至少有一个self参数 "</span><span class="string">""</span>
+        <span class="comment"># print self.name</span>
+        <span class="built_in">print</span> <span class="string">'普通方法'</span>
+    @classmethod
+    def class_func(cls):
+        <span class="string">""</span><span class="string">" 定义类方法，至少有一个cls参数 "</span><span class="string">""</span>
+        <span class="built_in">print</span> <span class="string">'类方法'</span>
+    @staticmethod
+    def static_func():
+        <span class="string">""</span><span class="string">" 定义静态方法 ，无默认参数"</span><span class="string">""</span>
+        <span class="built_in">print</span> <span class="string">'静态方法'</span>
+<span class="comment"># 调用普通方法</span>
+f = Foo()
+f.ord_func()
+<span class="comment"># 调用类方法</span>
+Foo.class_func()
+<span class="comment"># 调用静态方法</span>
+Foo.static_func()
+</code></pre>
+<h4 id="装饰器方式：在类的普通方法上应用-property装饰器"><a href="#装饰器方式：在类的普通方法上应用-property装饰器" class="headerlink" title="装饰器方式：在类的普通方法上应用@property装饰器"></a>装饰器方式：在类的普通方法上应用@property装饰器</h4><p>我们知道Python中的类有经典类和新式类，新式类的属性比经典类的属性丰富。（ 如果类继object，那么该类是新式类 ）<br>经典类，具有一种@property装饰器</p>
+<pre><code class="bash">class Goods:
+    @property
+    def price(self):
+        <span class="built_in">return</span> <span class="string">"wupeiqi"</span>
+obj = Goods()
+result = obj.price  <span class="comment"># 自动执行 @property 修饰的 price 方法，并获取方法的返回值</span>
+<span class="string">''</span><span class="string">'</span>
+<span class="string"># 新式类，具有三种@property装饰器</span>
+<span class="string">'</span><span class="string">''</span>
+class Goods(object):
+    @property
+    def price(self):
+        <span class="built_in">print</span> <span class="string">'@property'</span>
+    @price.setter
+    def price(self, value):
+        <span class="built_in">print</span> <span class="string">'@price.setter'</span>
+    @price.deleter
+    def price(self):
+        <span class="built_in">print</span> <span class="string">'@price.deleter'</span>
+obj = Goods()
+obj.price       <span class="comment"># 自动执行 @property 修饰的 price 方法，并获取方法的返回值</span>
+obj.price = 123 <span class="comment"># 自动执行 @price.setter 修饰的 price 方法，并将  123 赋值给方法的参数</span>
+del obj.price      <span class="comment"># 自动执行 @price.deleter 修饰的 price 方法</span>
+
+</code></pre>
+<h4 id="新式类中的属性有三种访问方式，并分别对应了三个被-property、-方法名-setter、-方法-deleter修饰的方法"><a href="#新式类中的属性有三种访问方式，并分别对应了三个被-property、-方法名-setter、-方法-deleter修饰的方法" class="headerlink" title="新式类中的属性有三种访问方式，并分别对应了三个被@property、@方法名.setter、@方法.deleter修饰的方法"></a>新式类中的属性有三种访问方式，并分别对应了三个被@property、@方法名.setter、@方法.deleter修饰的方法</h4><p>由于新式类中具有三种访问方式，我们可以根据他们几个属性的访问特点，分别将三个方法定义为对同一个属性：获取、修改、删除</p>
+<pre><code class="bash">class Goods(object):
+    def __init__(self):
+        <span class="comment"># 原价</span>
+        self.original_price = 100
+        <span class="comment"># 折扣</span>
+        self.discount = 0.8
+    @property
+    def price(self):
+        <span class="comment"># 实际价格 = 原价 * 折扣</span>
+        new_price = self.original_price * self.discount
+        <span class="built_in">return</span> new_price
+    @price.setter
+    def price(self, value):
+        self.original_price = value
+    @price.deltter
+    def price(self, value):
+        del self.original_price
+obj = Goods()
+obj.price         <span class="comment"># 获取商品价格</span>
+obj.price = 200   <span class="comment"># 修改商品原价</span>
+del obj.price     <span class="comment"># 删除商品原价</span>
+</code></pre>
 
       
 
@@ -269,7 +348,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/07/excel/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/09/object/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -283,18 +362,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/08/09/object/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Python基础1——数据类型
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/07/21/dict/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Python基础5——字典相关操作</div>
+    <a href="/2018/08/07/excel/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Python基础5——Excel文件的读写操作</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -325,8 +395,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://yoursite.com/2018/08/07/excel/", 
-    sourceId: "excel",
+    url: "http://yoursite.com/2018/08/09/object/", 
+    sourceId: "object",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };

@@ -162,6 +162,73 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-object" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/09/object/">Python基础1——数据类型</a>
+    </h1>
+  
+
+        
+        <a href="/2018/08/09/object/" class="archive-article-date">
+  	<time datetime="2018-08-09T09:35:38.932Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="构造方法init"><a href="#构造方法init" class="headerlink" title="构造方法init"></a>构造方法<strong>init</strong></h3><p>构造方法<strong>init</strong>(self,….)在生成对象时调用，可以用来进行一些初始化操作，不需要显示去调用，系统会默认去执行。构造方法支持重载，如果用户自己没有重新定义构造方法，系统就自动执行默认的构造方法。</p>
+<h3 id="构造方法init-1"><a href="#构造方法init-1" class="headerlink" title="构造方法init"></a>构造方法<strong>init</strong></h3><p>析构方法<strong>del</strong>(self)在释放对象时调用，支持重载，可以在里面进行一些释放资源的操作，不需要显示调用。</p>
+<h3 id="类属性-私有属性，公有属性"><a href="#类属性-私有属性，公有属性" class="headerlink" title="类属性:私有属性，公有属性"></a>类属性:私有属性，公有属性</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">class people:</span><br><span class="line">    name = <span class="string">'jack'</span>  <span class="comment">#公有的类属性</span></span><br><span class="line">    __age = 12     <span class="comment">#私有的类属性</span></span><br><span class="line">p = people()</span><br><span class="line"><span class="built_in">print</span> p.name             <span class="comment">#正确</span></span><br><span class="line"><span class="built_in">print</span> people.name        <span class="comment">#正确</span></span><br><span class="line"><span class="built_in">print</span> p.__age            <span class="comment">#错误，不能在类外通过实例对象访问私有的类属性</span></span><br><span class="line"><span class="built_in">print</span> people.__age       <span class="comment">#错误，不能在类外通过类对象访问私有的类属性</span></span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2018/08/09/object/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/09/object/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-excel" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -729,80 +796,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/07/17/Python_03/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Python_02" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/17/Python_02/">Python基础2——运算和运算符</a>
-    </h1>
-  
-
-        
-        <a href="/2018/07/17/Python_02/" class="archive-article-date">
-  	<time datetime="2018-07-17T08:35:15.369Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><p>&#43;   &#45;  &#42;   &#47;  %（取模）  **（求幂）  //（取整)</p>
-<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><p>==   !=  &lt;&gt;  &gt;   &lt;    &gt;=   &lt;= </p>
-<h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><p>=  +=  -=  *=  /=  %=  **=  //=</p>
-<h3 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h3><p>&amp;(按位与运算符)   |(按位或运算符)   ^(按位异或运算符)<br>~(按位取反运算符)  &lt;&lt;(左移动运算符)  &gt;&gt;(右移动运算符)</p>
-<h3 id="逻辑与-and"><a href="#逻辑与-and" class="headerlink" title="逻辑与  and"></a>逻辑与  and</h3><p>逻辑与运算表达式：表达式1 and 表达式2<br>【有一个为假就为假】</p>
-<h3 id="逻辑或-or"><a href="#逻辑或-or" class="headerlink" title="逻辑或  or"></a>逻辑或  or</h3><p>逻辑或运算表达式：表达式1  or  表达式2<br>【有一个为真就为真】</p>
-<h3 id="逻辑非：-not"><a href="#逻辑非：-not" class="headerlink" title="逻辑非： not"></a>逻辑非： not</h3><p>逻辑非运算表达式： not 表达式</p>
-<h3 id="成员运算符"><a href="#成员运算符" class="headerlink" title="成员运算符"></a>成员运算符</h3><p>in：如果在指定的序列中找到值返回True，否则返回False<br>not in：如果在指定的序列中没有找到值返回True，否则返回False</p>
-<h3 id="身份运算符"><a href="#身份运算符" class="headerlink" title="身份运算符"></a>身份运算符</h3><p>is：判断两个标识符是不是引用同一个对象<br>is not：判断两个标识符是不是引用不同一个对象</p>
-<h2 id="获取变量类型-type（）"><a href="#获取变量类型-type（）" class="headerlink" title="获取变量类型  type（）"></a>获取变量类型  type（）</h2><p>isinstance() 函数来判断一个对象是否是一个已知的类型<br>语法：isinstance(object, classinfo)   判断object是否是classinfo类型，是的话返回True，否的话返回False<br>    object – 实例对象。<br>    classinfo – 可以是直接或间接类名、基本类型或者由它们组成的元组<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">list1=[<span class="string">'hello'</span>,100,45,78,10,[<span class="string">'one'</span>,<span class="string">'two'</span>]]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> list1:</span><br><span class="line">    <span class="keyword">if</span> isinstance(i,int):</span><br><span class="line">        <span class="keyword">if</span> i%2==0:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'%d是一个偶数'</span>%i)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'%d是一个奇数'</span>%i)</span><br></pre></td></tr></table></figure></p>
-        
-          <a class="article-more-a" href="/2018/07/17/Python_02/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/07/17/Python_02/">展开全文 >></a>
         </p>
       
 
